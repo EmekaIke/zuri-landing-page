@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Poppins:wght@100;200;300;600&display=swap');
+body{
+    background: url('image/bg-hero-desktop.svg') ;
+    font-size: 18px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+h2, h3{
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    border-radius: 40px;
+    padding: 0 4%;
+    background-color: white;
+}
+.btn button{
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 40px;
+    padding: 1% 6%;
+    color: white;
+
+}
+.lbtn button{
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 40px;
+    padding: 4% 9%;
+    color:white;
+    margin: auto 20%;
+}
+.lblock{
+    background-color: white;
+    border: 0.1px solid whitesmoke ;
+    width: 30%;
+    margin: 0 auto;
+    z-index:2;
+    padding: 7%;
+    /* margin-top: 5%; */
+}
+.image{
+    width: 400px;
+}
+.image img{
+    width:100%
+}
+
+.blocks{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    margin:7% auto;
+    grid-gap:10%;
+    width:80%;
+}
+
+/* .text{
+    width:150px;
+} */
+footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+     width: 100%; 
+    margin:auto 0; 
+    background-color: hsl(192, 100%, 9%);
+    color:white;
+    z-index: 1;
+}
+
+.foot{
+    padding: 20%;
+}
+.foot a{
+    text-decoration: none;
+    color: white
+}
+.f1{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10%
+}
+.fimage img{
+    background:white
+}
+.f2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 9%;
+    padding-top: 45%;
+}
+.f3{
+    padding-top: 45%;
+}
+.copy{
+    font-size: 12px;
+    grid-area: 4/4/5/5;
+    text-align: center;
+}
+
+.img:hover{
+    transform: scale(2.1);
+}
+button:hover{
+    transform: rotateX(30);
+}
+
+@media screen and (max-width: 600px){
+    .blocks{
+        display: grid;
+        grid-template-columns: 1fr;
+        width:80%;
+    }
+    
+    .image{
+        width:180px;
+    }
+    footer{
+        display:flex;
+        flex-direction: column;
+        grid-gap: 0;
+        /* grid-template-columns: 1fr; */
+    }
+    body{
+        font: size 14px;
+    }
+    button{
+        border-radius: 25px;
+        padding: 0 2%;
+        background-color: white;
+    }
+    header img{
+        width: 120px;
+    }
+    .fimage img{
+        width: 120px;
+    }
+    .foot{
+        padding: 4%
+    }
+    .f3{
+        width:20%;
+        margin: auto;
+    }
+    .lbtn button{
+        border-radius: 25px;
+        padding: 1% 3%;
+        color:white;
+        margin: auto 15%;
+
+    }
+    .lblock{
+        background-color: white;
+        border: 0.1px solid whitesmoke ;
+        width: 80%;
+        margin: 0 auto;
+        z-index:2;
+        padding: 4%;
+        margin-left: 5%;
+    
+    }
+    .lblock h3{
+        font-size: 17px;
+    }
+}
+@media screen and(max-width:992px){
+    .image{
+        width:180px;
+    }
+    main{
+        width:80%;
+}
+    
